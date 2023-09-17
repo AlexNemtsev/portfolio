@@ -1,11 +1,13 @@
 import { Header } from './layout/Header';
-import { Main } from './layout/Main';
+import { MainSection } from './layout/MainSection';
+import { SkillsSection } from './layout/SkillsSection';
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <MainSection />
+      <SkillsSection />
     </>
   );
 }

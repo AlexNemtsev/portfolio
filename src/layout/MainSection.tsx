@@ -5,7 +5,7 @@ import { StyledLink } from '../components/StyledLink';
 import { Icon } from '../components/Icon';
 import { Section } from '../components/Section';
 
-export const Main = () => {
+export const MainSection = () => {
   return (
     <Section $minHeight="100vh">
       <FlexWrapper $justify="space-between">
