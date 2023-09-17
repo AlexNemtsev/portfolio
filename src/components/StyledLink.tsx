@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface StyledLinkProps {
-  filled?: string;
+  $filled?: boolean;
 }
 
 export const StyledLink = styled.a<StyledLinkProps>`
@@ -10,7 +10,7 @@ export const StyledLink = styled.a<StyledLinkProps>`
   font-weight: 500;
 
   ${(props) =>
-    props.filled &&
+    props.$filled &&
     css`
       background-color: #5222d0;
       color: #dbffff;
