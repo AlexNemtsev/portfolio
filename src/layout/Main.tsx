@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import photo from '../assets/images/photo.webp';
 import { FlexWrapper } from '../components/FlexWrapper';
 import { StyledLink } from '../components/StyledLink';
-import icons from '../assets/images/icons-sprite.svg';
+import { Icon } from '../components/Icon';
 
 export const Main = () => {
   return (
@@ -17,9 +17,7 @@ export const Main = () => {
       </FlexWrapper>
       <FlexWrapper $justify="center">
         <a href="">
-          <svg width="32" height="32">
-            <use xlinkHref={`${icons}#arrow`}></use>
-          </svg>
+          <Icon iconId="arrow" width="32" height="32" viewBox="0 0 32 32" />
         </a>
       </FlexWrapper>
     </>

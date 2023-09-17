@@ -12,7 +12,7 @@ export const Menu = () => {
           <StyledLink href="">Projects</StyledLink>
         </li>
         <li>
-          <StyledLink href="" $filled="true">
+          <StyledLink href="" $filled>
             Contact
           </StyledLink>
         </li>
