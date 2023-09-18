@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface FlexWrapperProps {
   $direction?: string;
@@ -7,6 +7,8 @@ interface FlexWrapperProps {
   $wrap?: string;
   $rowGap?: string;
   $columnGap?: string;
+  $width?: string;
+  $maxWidth?: string;
 }
 
 export const FlexWrapper = styled.div<FlexWrapperProps>`
@@ -17,4 +19,16 @@ export const FlexWrapper = styled.div<FlexWrapperProps>`
   flex-wrap: ${(props) => props.$wrap ?? 'wrap'};
   row-gap: ${(props) => props.$rowGap ?? 'initial'};
   column-gap: ${(props) => props.$columnGap ?? 'initial'};
+
+  ${(props) =>
+    props.$maxWidth &&
+    css`
+      max-width: ${props.$maxWidth};
+    `}
+
+  ${(props) =>
+    props.$width &&
+    css`
+      width: ${props.$width};
+    `}
 `;
