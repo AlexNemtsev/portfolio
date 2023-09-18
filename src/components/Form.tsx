@@ -1,6 +1,7 @@
 import React from 'react';
 import { FlexWrapper } from './FlexWrapper';
-import { StyledLink } from './StyledLink';
+import { HighlightedLink } from './StyledLinks';
+import styled from 'styled-components';
 
 interface StyledLabelProps {
   children: React.ReactNode;
@@ -21,7 +22,7 @@ export const Form = () => {
         Message
         <textarea></textarea>
       </StyledLabel>
-      <StyledLink $filled as="input" type="submit" value="Submit" />
+      <HighlightedLink as={StyledSubmit} type="submit" value="Submit" />
     </FlexWrapper>
   );
 };
@@ -33,3 +34,17 @@ const StyledLabel = (props: StyledLabelProps) => {
     </FlexWrapper>
   );
 };
+
+const StyledSubmit = styled.input.attrs(() => ({
+  type: 'submit',
+  value: 'Submit',
+}))`
+  font-size: 16px;
+  width: 100%;
+  max-width: 540px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;

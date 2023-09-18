@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import photo from '../assets/images/photo.webp';
 import { FlexWrapper } from '../components/FlexWrapper';
-import { StyledLink } from '../components/StyledLink';
+import { HighlightedLink } from '../components/StyledLinks';
 import { Icon } from '../components/Icon';
 import { Section } from '../components/Section';
 
@@ -12,7 +12,7 @@ export const MainSection = () => {
         <FlexWrapper $direction="column" $align="flex-start">
           <MainHeader>Front-end developer</MainHeader>
           <span>Nemtsev Alexander</span>
-          <StyledLink $filled>Contact Me</StyledLink>
+          <HighlightedLink href="">Contact Me</HighlightedLink>
         </FlexWrapper>
         <StyledPhoto src={photo} alt="My photo" />
       </FlexWrapper>

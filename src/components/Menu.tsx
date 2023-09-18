@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledLink } from './StyledLink';
+import { HighlightedLink, StyledLink } from './StyledLinks';
 
 export const Menu = () => {
   return (
@@ -12,9 +12,7 @@ export const Menu = () => {
           <StyledLink href="">Projects</StyledLink>
         </li>
         <li>
-          <StyledLink href="" $filled>
-            Contact
-          </StyledLink>
+          <HighlightedLink href="">Contact</HighlightedLink>
         </li>
       </ul>
     </StyledMenu>
