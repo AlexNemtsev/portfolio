@@ -11,6 +11,8 @@ interface SkillProps {
 
 const GITVIEWBOX = '0 0 48 48';
 
+// TODO: добавить адаптив иконок для мобилок
+// http://css.yoksel.ru/svg-sizes/#coordinates
 export const Skill = (props: SkillProps) => {
   return (
     <FlexWrapper $direction="column" $align="center">
