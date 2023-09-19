@@ -11,11 +11,12 @@ interface FlexWrapperProps {
   $maxWidth?: string;
 }
 
+// TODO: убрать дефолтные значения
 export const FlexWrapper = styled.div<FlexWrapperProps>`
   display: flex;
   flex-direction: ${(props) => props.$direction ?? 'row'};
   justify-content: ${(props) => props.$justify ?? 'flex-start'};
-  align-items: ${(props) => props.$align ?? 'stretch'};
+  align-items: ${(props) => props.$align ?? 'flex-start'};
   flex-wrap: ${(props) => props.$wrap ?? 'wrap'};
   row-gap: ${(props) => props.$rowGap ?? 'initial'};
   column-gap: ${(props) => props.$columnGap ?? 'initial'};
