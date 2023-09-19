@@ -36,7 +36,7 @@ const projectsList: ProjectData[] = [
 
 export const Projects = () => {
   return (
-    <FlexWrapper>
+    <FlexWrapper $justify="center" $rowGap="20px" $columnGap="20px">
       {projectsList.map((project) => (
         <ProjectCard {...project} key={project.title} />
       ))}
