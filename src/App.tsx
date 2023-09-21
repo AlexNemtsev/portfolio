@@ -1,3 +1,4 @@
+import { AboutSection } from './layout/AboutSection';
 import { ContactsSection } from './layout/ContactsSection';
 import { Header } from './layout/Header';
 import { MainSection } from './layout/MainSection';
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <MainSection />
+      <AboutSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactsSection />

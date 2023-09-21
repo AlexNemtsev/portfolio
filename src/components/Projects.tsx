@@ -7,28 +7,28 @@ const projectsList: ProjectData[] = [
   {
     cover: `${coverStub}`,
     title: 'Project 1',
-    skills: ['redux', 'typescript', 'redux'],
+    skills: ['react', 'typescript', 'redux'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maxime officia numquam eum tenetur eius nihil doloremque laborum molestiae explicabo?',
   },
   {
     cover: `${coverStub}`,
     title: 'Project 2',
-    skills: ['redux', 'typescript', 'redux'],
+    skills: ['react', 'typescript', 'redux'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maxime officia numquam eum tenetur eius nihil doloremque laborum molestiae explicabo?',
   },
   {
     cover: `${coverStub}`,
     title: 'Project 3',
-    skills: ['redux', 'typescript', 'redux'],
+    skills: ['react', 'typescript', 'redux'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maxime officia numquam eum tenetur eius nihil doloremque laborum molestiae explicabo?',
   },
   {
     cover: `${coverStub}`,
     title: 'Project 4',
-    skills: ['redux', 'typescript', 'redux'],
+    skills: ['react', 'typescript', 'redux'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maxime officia numquam eum tenetur eius nihil doloremque laborum molestiae explicabo?',
   },
