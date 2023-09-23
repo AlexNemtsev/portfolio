@@ -4,15 +4,13 @@ import { HighlightedLink, StyledLink } from './StyledLinks';
 export const Menu = () => {
   return (
     <StyledMenu>
+      <StyledLink href="#main">Home</StyledLink>
       <ul>
         <li>
-          <StyledLink href="">Home</StyledLink>
+          <StyledLink href="#projects">Projects</StyledLink>
         </li>
         <li>
-          <StyledLink href="">Projects</StyledLink>
-        </li>
-        <li>
-          <HighlightedLink href="">Contact</HighlightedLink>
+          <HighlightedLink href="#contacts">Contact</HighlightedLink>
         </li>
       </ul>
     </StyledMenu>
@@ -20,10 +18,15 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   ul {
     margin: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 90px;
     padding: 0;
     list-style: none;
   }

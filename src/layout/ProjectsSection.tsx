@@ -4,7 +4,7 @@ import { SectionTitle } from '../components/SectionTitle';
 
 export const ProjectsSection = () => {
   return (
-    <Section>
+    <Section id="projects">
       <SectionTitle>Projects</SectionTitle>
       <Projects />
     </Section>

@@ -4,7 +4,7 @@ import { SectionTitle } from '../components/SectionTitle';
 
 export const ContactsSection = () => {
   return (
-    <Section>
+    <Section id="contacts">
       <SectionTitle>Contacts</SectionTitle>
       <Form />
     </Section>

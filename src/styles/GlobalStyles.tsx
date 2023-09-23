@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   font-family: 'Montserrat', sans-serif;
   color: ${(props) => props.theme.mainColor};
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {

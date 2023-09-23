@@ -7,7 +7,7 @@ import { Section } from '../components/Section';
 
 export const MainSection = () => {
   return (
-    <Section $minHeight="100vh">
+    <Section $minHeight="100vh" id="main">
       <FlexWrapper $justify="space-between">
         <FlexWrapper $direction="column" $align="flex-start">
           <MainHeader>Front-end developer</MainHeader>
