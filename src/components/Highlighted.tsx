@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Highlighted = styled.a`
-  background-color: #5222d0;
-  color: #dbffff;
+  background-color: ${(props) => props.theme.accentColor};
+  color: ${(props) => props.theme.secondaryColor};
   text-decoration: none;
 `;
