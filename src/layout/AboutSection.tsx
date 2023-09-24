@@ -5,7 +5,7 @@ import { SectionTitle } from '../components/SectionTitle';
 export const AboutSection = () => {
   return (
     <Section>
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle id="about">About me</SectionTitle>
       <StyledParagraph>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste recusandae accusantium
         voluptatibus facere dolorem corrupti quae! Fugit ipsum, qui saepe quasi tempore quae
