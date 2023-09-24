@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { HighlightedLink, StyledLink } from './StyledLinks';
+import { Container } from './Container';
 
 export const Menu = () => {
   return (
-    <StyledMenu>
+    <Container as={StyledMenu}>
       <StyledLink href="#main">Home</StyledLink>
       <ul>
         <li>
@@ -13,7 +14,7 @@ export const Menu = () => {
           <HighlightedLink href="#contacts">Contact</HighlightedLink>
         </li>
       </ul>
-    </StyledMenu>
+    </Container>
   );
 };
 
