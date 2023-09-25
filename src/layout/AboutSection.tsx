@@ -1,21 +1,22 @@
 import styled from 'styled-components';
-import { Section } from '../components/Section';
 import { SectionTitle } from '../components/SectionTitle';
+import { Container } from '../components/Container';
 
 export const AboutSection = () => {
   return (
-    <Section>
-      <SectionTitle id="about">About me</SectionTitle>
+    <Container as="section">
+      <SectionTitle id="about" $marginBottom="20px">
+        About me
+      </SectionTitle>
       <StyledParagraph>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste recusandae accusantium
         voluptatibus facere dolorem corrupti quae! Fugit ipsum, qui saepe quasi tempore quae
         veritatis laudantium corrupti numquam dignissimos consectetur.
       </StyledParagraph>
-    </Section>
+    </Container>
   );
 };
 
-// TODO: Вынести все цвета в темы
 const StyledParagraph = styled.p`
   box-sizing: border-box;
   max-width: 865px;
@@ -28,7 +29,8 @@ const StyledParagraph = styled.p`
     position: absolute;
     width: 5px;
     height: 95%;
-    background-color: #5222d0;
+    border-radius: 2px;
+    background-color: ${(props) => props.theme.accentColor};
     left: 0;
     bottom: 0;
   }

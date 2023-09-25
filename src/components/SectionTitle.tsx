@@ -1,6 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const SectionTitle = styled.h2`
+interface SectionTitleProps {
+  $marginBottom?: string;
+}
+
+export const SectionTitle = styled.h2<SectionTitleProps>`
   margin: 0;
   color: ${(props) => props.theme.titleColor};
+
+  ${(props) =>
+    props.$marginBottom &&
+    css`
+      margin-bottom: ${props.$marginBottom};
+    `}
 `;
