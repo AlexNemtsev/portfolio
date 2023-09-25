@@ -5,7 +5,7 @@ import { Container } from '../components/Container';
 export const AboutSection = () => {
   return (
     <Container as="section">
-      <SectionTitle id="about" $marginBottom="20px">
+      <SectionTitle id="about" $margin="0 0 20px">
         About me
       </SectionTitle>
       <StyledParagraph>

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface SectionTitleProps {
-  $marginBottom?: string;
+  $margin?: string;
 }
 
 export const SectionTitle = styled.h2<SectionTitleProps>`
@@ -9,8 +9,8 @@ export const SectionTitle = styled.h2<SectionTitleProps>`
   color: ${(props) => props.theme.titleColor};
 
   ${(props) =>
-    props.$marginBottom &&
+    props.$margin &&
     css`
-      margin-bottom: ${props.$marginBottom};
+      margin: ${props.$margin};
     `}
 `;
