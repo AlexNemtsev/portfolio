@@ -1,12 +1,12 @@
-import { Section } from '../components/Section';
+import { Container } from '../components/Container';
 import { SectionTitle } from '../components/SectionTitle';
 import { Skills } from '../components/Skills';
 
 export const SkillsSection = () => {
   return (
-    <Section>
+    <Container as="section">
       <SectionTitle>Skills</SectionTitle>
       <Skills />
-    </Section>
+    </Container>
   );
 };

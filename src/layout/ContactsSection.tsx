@@ -1,12 +1,12 @@
+import { Container } from '../components/Container';
 import { Form } from '../components/Form';
-import { Section } from '../components/Section';
 import { SectionTitle } from '../components/SectionTitle';
 
 export const ContactsSection = () => {
   return (
-    <Section id="contacts">
+    <Container as="section" id="contacts">
       <SectionTitle>Contacts</SectionTitle>
       <Form />
-    </Section>
+    </Container>
   );
 };
