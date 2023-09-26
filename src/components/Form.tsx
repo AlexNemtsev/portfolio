@@ -16,11 +16,11 @@ export const Form = () => {
       </StyledLabel>
       <StyledLabel>
         Email
-        <StyledInput type="email" required />
+        <StyledInput type="email" required placeholder="example@gmail.com" />
       </StyledLabel>
       <StyledLabel>
         Message
-        <textarea></textarea>
+        <StyledInput as={StyledTextArea} placeholder="Type your message here" />
       </StyledLabel>
       <HighlightedLink as={StyledSubmit} type="submit" value="Submit" />
     </FlexWrapper>
@@ -44,13 +44,26 @@ const StyledInput = styled.input`
   box-sizing: border-box;
   height: 48px;
   padding: 15px;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: inherit;
   font-weight: 400;
+  border: 1px solid ${(props) => props.theme.inputBorderColor};
   border-radius: 6px;
 
-  ::placeholder {
+  &::placeholder {
     color: ${(props) => props.theme.placeholderColor};
+    font-size: 14px;
   }
+
+  &:focus {
+    outline: 2px solid ${(props) => props.theme.accentColor};
+    border: none;
+  }
+`;
+
+const StyledTextArea = styled.textarea`
+  resize: none;
+  min-height: 165px;
 `;
 
 const StyledSubmit = styled.input.attrs(() => ({
