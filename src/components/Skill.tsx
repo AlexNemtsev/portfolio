@@ -15,7 +15,7 @@ const GITVIEWBOX = '0 0 48 48';
 // http://css.yoksel.ru/svg-sizes/#coordinates
 export const Skill = (props: SkillProps) => {
   return (
-    <FlexWrapper $direction="column" $align="center">
+    <FlexWrapper $direction="column" $align="center" $rowGap="20px">
       <Icon
         iconId={props.iconId}
         width={`${ICONSIZEWEB}`}
