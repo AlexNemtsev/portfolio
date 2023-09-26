@@ -12,11 +12,11 @@ export const Form = () => {
     <FlexWrapper as="form" $direction="column" $align="center" $rowGap="25px">
       <StyledLabel>
         Name
-        <input type="text" />
+        <StyledInput type="text" placeholder="Ivan Ivanov" />
       </StyledLabel>
       <StyledLabel>
         Email
-        <input type="email" />
+        <StyledInput type="email" required />
       </StyledLabel>
       <StyledLabel>
         Message
@@ -29,11 +29,29 @@ export const Form = () => {
 
 const StyledLabel = (props: StyledLabelProps) => {
   return (
-    <FlexWrapper as="label" $direction="column" $maxWidth="540px" $width="100%" $rowGap="6px">
+    <FlexWrapper as={Label} $direction="column" $maxWidth="540px" $width="100%" $rowGap="6px">
       {props.children}
     </FlexWrapper>
   );
 };
+
+const Label = styled.label`
+  font-size: 14px;
+  font-weight: 400;
+`;
+
+const StyledInput = styled.input`
+  box-sizing: border-box;
+  height: 48px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 6px;
+
+  ::placeholder {
+    color: ${(props) => props.theme.placeholderColor};
+  }
+`;
 
 const StyledSubmit = styled.input.attrs(() => ({
   type: 'submit',

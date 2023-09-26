@@ -7,6 +7,7 @@ declare module 'styled-components' {
     titleColor: string;
     accentColor: string;
     secondaryColor: string;
+    placeholderColor: string;
     projectCard: {
       boxShadow?: string;
       backgroundColor: string;
