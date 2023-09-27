@@ -18,7 +18,11 @@ export const MainSection = () => {
       </FlexWrapper>
       <FlexWrapper $justify="center">
         <a href="#about">
-          <Icon iconId="arrow" width="32" height="32" viewBox="0 0 32 32" />
+          <Icon
+            iconId="arrow"
+            sizes={{ $web: { width: '32px', height: '32px' } }}
+            viewBox="0 0 32 32"
+          />
         </a>
       </FlexWrapper>
     </FlexWrapper>

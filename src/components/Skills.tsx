@@ -1,5 +1,5 @@
 import { FlexWrapper } from './FlexWrapper';
-import { Skill } from './Skill';
+import { IconWithCaption } from './IconWithCaption';
 
 interface skill {
   iconId: string;
@@ -37,11 +37,22 @@ const skills: skill[] = [
   },
 ];
 
+const ICONSIZES = {
+  $web: { width: '120px', height: '120px' },
+  $mobile: { width: '90px', height: '90px' },
+};
+
 export const Skills = () => {
   return (
     <FlexWrapper $rowGap="60px" $columnGap="120px" $justify="center">
       {skills.map((skill) => (
-        <Skill iconId={skill.iconId} skillName={skill.skillName} key={skill.skillName} />
+        <IconWithCaption
+          iconId={skill.iconId}
+          skillName={skill.skillName}
+          key={skill.skillName}
+          viewBox={'0 0 120 120'}
+          sizes={ICONSIZES}
+        />
       ))}
     </FlexWrapper>
   );
