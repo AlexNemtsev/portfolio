@@ -2,26 +2,18 @@ import styled from 'styled-components';
 import { FlexWrapper } from './FlexWrapper';
 import { Icon } from './Icon';
 
-const ICONSIZEWEB = 120;
-
 interface SkillProps {
   iconId: string;
   skillName: string;
 }
 
-const GITVIEWBOX = '0 0 48 48';
-
+// TODO: Сделать компонент универсальным для иконок соцсетей
 // TODO: добавить адаптив иконок для мобилок
 // http://css.yoksel.ru/svg-sizes/#coordinates
 export const Skill = (props: SkillProps) => {
   return (
     <FlexWrapper $direction="column" $align="center" $rowGap="20px">
-      <Icon
-        iconId={props.iconId}
-        width={`${ICONSIZEWEB}`}
-        height={`${ICONSIZEWEB}`}
-        viewBox={props.iconId === 'git' ? GITVIEWBOX : `0 0 ${ICONSIZEWEB} ${ICONSIZEWEB}`}
-      />
+      <Icon iconId={props.iconId} />
       <SkillName>{props.skillName}</SkillName>
     </FlexWrapper>
   );
@@ -29,5 +21,5 @@ export const Skill = (props: SkillProps) => {
 
 const SkillName = styled.span`
   text-transform: uppercase;
-  max-width: ${ICONSIZEWEB}px;
+  max-width: 120px;
 `;
