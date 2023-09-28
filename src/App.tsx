@@ -1,19 +1,19 @@
-import { AboutSection } from './layout/AboutSection';
-import { ContactsSection } from './layout/ContactsSection';
-import { HeaderSection } from './layout/HeaderSection';
-import { MainSection } from './layout/MainSection';
-import { ProjectsSection } from './layout/ProjectsSection';
-import { SkillsSection } from './layout/SkillsSection';
+import { About } from './layout/About';
+import { Contacts } from './layout/Contacts';
+import { Header } from './layout/Header';
+import { Main } from './layout/Main';
+import { Projects } from './layout/Projects';
+import { Skills } from './layout/Skills';
 
 function App() {
   return (
     <>
-      <HeaderSection />
-      <MainSection />
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ContactsSection />
+      <Header />
+      <Main />
+      <About />
+      <Projects />
+      <Skills />
+      <Contacts />
     </>
   );
 }

@@ -34,7 +34,7 @@ const projectsList: ProjectData[] = [
   },
 ];
 
-export const Projects = () => {
+export const ProjectsList = () => {
   return (
     <FlexWrapper $justify="center" $rowGap="20px" $columnGap="20px">
       {projectsList.map((project) => (

@@ -42,7 +42,7 @@ const ICONSIZES = {
   $mobile: { width: '90px', height: '90px' },
 };
 
-export const Skills = () => {
+export const SkillsList = () => {
   return (
     <FlexWrapper $rowGap="60px" $columnGap="120px" $justify="center">
       {skills.map((skill) => (

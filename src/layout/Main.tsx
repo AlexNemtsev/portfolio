@@ -5,7 +5,7 @@ import { HighlightedLink } from '../components/StyledLinks';
 import { Icon } from '../components/Icon';
 import { Container } from '../components/Container';
 
-export const MainSection = () => {
+export const Main = () => {
   return (
     <FlexWrapper as={Section} $direction="column" id="main" $rowGap="100px">
       <FlexWrapper as={Container} $justify="space-between" $align="center">

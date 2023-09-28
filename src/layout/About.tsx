@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { SectionTitle } from '../components/SectionTitle';
 import { Container } from '../components/Container';
 
-export const AboutSection = () => {
+export const About = () => {
   return (
     <Container as="section">
       <SectionTitle id="about" $margin="0 0 20px">

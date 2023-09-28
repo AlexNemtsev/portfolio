@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Container } from '../components/Container';
 import { StyledLink, HighlightedLink } from '../components/StyledLinks';
 
-export const HeaderSection = () => {
+export const Header = () => {
   return (
     <header>
       <Container as={StyledMenu}>
