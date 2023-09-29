@@ -1,36 +1,35 @@
 import styled from 'styled-components';
 import { Container } from '../components/Container';
-import { StyledLink, HighlightedLink } from '../components/StyledLinks';
+import { StyledLink } from '../components/StyledLinks';
 
-export const Header = () => {
+export const Footer = () => {
   return (
-    <header>
-      <Container as={StyledMenu}>
-        <StyledLink href="#main">Home</StyledLink>
+    <Container as="footer">
+      <StyledMenu>
         <ul>
           <li>
             <StyledLink href="#projects">Projects</StyledLink>
           </li>
           <li>
-            <HighlightedLink href="#contacts">Contact</HighlightedLink>
+            <StyledLink href="#contacts">Contact</StyledLink>
           </li>
         </ul>
-      </Container>
-    </header>
+      </StyledMenu>
+    </Container>
   );
 };
 
 const StyledMenu = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-weight: 500;
+  font-size: 14px;
 
   ul {
     margin: 40px 0;
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 48px;
     padding: 0;
     list-style: none;
   }

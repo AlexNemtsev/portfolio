@@ -12,7 +12,7 @@ export const Main = () => {
         <FlexWrapper $direction="column" $align="flex-start">
           <MainHeader>Front-end developer</MainHeader>
           <Name>Nemtsev Alexander</Name>
-          <HighlightedLink href="#contacts">Contact Me</HighlightedLink>
+          <ContactLink href="#contacts">Contact Me</ContactLink>
         </FlexWrapper>
         <StyledPhoto src={photo} alt="My photo" />
       </FlexWrapper>
@@ -50,4 +50,8 @@ const Name = styled.span`
   font-weight: 600;
   max-width: 380px;
   margin: 10px 0 30px;
+`;
+
+const ContactLink = styled(HighlightedLink)`
+  font-weight: 500;
 `;

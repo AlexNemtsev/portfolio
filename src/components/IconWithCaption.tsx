@@ -6,7 +6,6 @@ interface IconWithCaptionProps extends IconProps {
   skillName: string;
 }
 
-// http://css.yoksel.ru/svg-sizes/#coordinates
 export const IconWithCaption = (props: IconWithCaptionProps) => {
   return (
     <FlexWrapper $direction="column" $align="center" $rowGap="20px">
