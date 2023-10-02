@@ -1,21 +1,33 @@
 import styled from 'styled-components';
 import { FlexWrapper } from './FlexWrapper';
 import { Icon, IconProps } from './Icon';
+import { StyledLink } from './StyledLinks';
 
-interface IconWithCaptionProps extends IconProps {
-  skillName: string;
+interface CaptionProps {
+  caption: string;
+  link?: string;
 }
+
+interface IconWithCaptionProps extends IconProps, CaptionProps {}
 
 export const IconWithCaption = (props: IconWithCaptionProps) => {
   return (
     <FlexWrapper $direction="column" $align="center" $rowGap="20px">
-      <Icon iconId={props.iconId} viewBox={props.viewBox} sizes={props.sizes} />
-      <Caption>{props.skillName}</Caption>
+      <Icon {...props} />
+      <Caption {...props} />
     </FlexWrapper>
   );
 };
 
-const Caption = styled.span`
+const Caption = (props: CaptionProps) => {
+  if (props.link) {
+    return <StyledLink href={props.link}>{props.caption}</StyledLink>;
+  }
+
+  return <StyledSpan>{props.caption}</StyledSpan>;
+};
+
+const StyledSpan = styled.span`
   text-transform: uppercase;
   max-width: 120px;
 `;

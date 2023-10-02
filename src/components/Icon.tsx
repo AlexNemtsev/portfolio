@@ -38,7 +38,7 @@ export const Icon = (props: IconProps) => {
   return <StyledIcon {...props} />;
 };
 
-export const StyledIcon = (props: Omit<IconProps, 'link'>) => {
+const StyledIcon = (props: Omit<IconProps, 'link'>) => {
   return (
     <StyledViewPort {...props.sizes} viewBox={props.viewBox}>
       <use xlinkHref={`${iconsSprite}#${props.iconId}`}></use>

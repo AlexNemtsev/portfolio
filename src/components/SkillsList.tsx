@@ -1,12 +1,12 @@
 import { FlexWrapper } from './FlexWrapper';
 import { IconWithCaption } from './IconWithCaption';
 
-interface skill {
+interface Skill {
   iconId: string;
   skillName: string;
 }
 
-const skills: skill[] = [
+const skills: Skill[] = [
   {
     iconId: 'js',
     skillName: 'javascript',
@@ -48,7 +48,7 @@ export const SkillsList = () => {
       {skills.map((skill) => (
         <IconWithCaption
           iconId={skill.iconId}
-          skillName={skill.skillName}
+          caption={skill.skillName}
           key={skill.skillName}
           viewBox={'0 0 120 120'}
           sizes={ICONSIZES}
