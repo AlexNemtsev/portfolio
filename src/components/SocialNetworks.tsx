@@ -37,7 +37,7 @@ export const SocialNetworks = () => {
           iconId={network.iconId}
           caption={network.caption}
           key={network.caption}
-          viewBox={'0 0 120 120'}
+          viewBox={'0 0 39 38'}
           link={network.link}
           sizes={ICONSIZES}
         />

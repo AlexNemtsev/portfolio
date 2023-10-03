@@ -21,7 +21,11 @@ export const IconWithCaption = (props: IconWithCaptionProps) => {
 
 const Caption = (props: CaptionProps) => {
   if (props.link) {
-    return <StyledLink href={props.link}>{props.caption}</StyledLink>;
+    return (
+      <StyledSpan as={StyledLink} href={props.link}>
+        {props.caption}
+      </StyledSpan>
+    );
   }
 
   return <StyledSpan>{props.caption}</StyledSpan>;
