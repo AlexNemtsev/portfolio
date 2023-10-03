@@ -38,7 +38,9 @@ export const SocialNetworks = () => {
           caption={network.caption}
           key={network.caption}
           viewBox={'0 0 39 38'}
+          rowGap="10px"
           link={network.link}
+          fontSize="12px"
           sizes={ICONSIZES}
         />
       ))}

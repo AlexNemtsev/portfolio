@@ -23,7 +23,7 @@ const StyledMenu = styled.nav`
   font-size: 14px;
 
   ul {
-    margin: 40px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 48px;

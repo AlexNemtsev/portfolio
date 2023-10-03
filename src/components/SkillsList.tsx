@@ -51,6 +51,7 @@ export const SkillsList = () => {
           caption={skill.skillName}
           key={skill.skillName}
           viewBox={'0 0 120 120'}
+          rowGap="20px"
           sizes={ICONSIZES}
         />
       ))}
