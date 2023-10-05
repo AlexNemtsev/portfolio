@@ -5,7 +5,9 @@ import { SkillsList } from '../components/SkillsList';
 export const Skills = () => {
   return (
     <Container as="section">
-      <SectionTitle $margin="140px 0 28px">Skills</SectionTitle>
+      <SectionTitle $margin="0 0 28px" id="skills">
+        Skills
+      </SectionTitle>
       <SkillsList />
     </Container>
   );

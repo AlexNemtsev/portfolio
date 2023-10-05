@@ -5,7 +5,7 @@ import { SectionTitle } from '../components/SectionTitle';
 export const Contacts = () => {
   return (
     <Container as="section" id="contacts">
-      <SectionTitle $margin="140px 0 50px">Contacts</SectionTitle>
+      <SectionTitle $margin="0 0 50px">Contacts</SectionTitle>
       <Form />
     </Container>
   );

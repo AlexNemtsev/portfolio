@@ -5,7 +5,7 @@ interface SectionTitleProps {
 }
 
 export const SectionTitle = styled.h2<SectionTitleProps>`
-  margin: 0;
+  padding-top: calc(1em + (1rem + 2 * 40px));
   color: ${(props) => props.theme.titleColor};
 
   ${(props) =>

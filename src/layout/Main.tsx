@@ -7,7 +7,7 @@ import { Container } from '../components/Container';
 
 export const Main = () => {
   return (
-    <FlexWrapper as={Section} $direction="column" id="main" $rowGap="100px">
+    <FlexWrapper as={Section} $direction="column" id="main" $rowGap="100px" $justify="center">
       <FlexWrapper as={Container} $justify="space-between" $align="center">
         <FlexWrapper $direction="column" $align="flex-start">
           <MainHeader>Front-end developer</MainHeader>
@@ -30,7 +30,9 @@ export const Main = () => {
 };
 
 const Section = styled.section`
-  min-height: 100vh;
+  box-sizing: border-box;
+  min-height: calc(100vh - (1rem + 2 * 40px));
+  padding: 100px 0 0;
 `;
 
 const StyledPhoto = styled.img`

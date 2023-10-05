@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { Container } from '../components/Container';
 import { StyledLink, HighlightedLink } from '../components/StyledLinks';
 
+export const HEADERHEIGHT = '100px';
+
 export const Header = () => {
   return (
-    <header>
+    <StyledHeader>
       <Container as={StyledMenu}>
         <StyledLink href="#main">Home</StyledLink>
         <ul>
@@ -12,13 +14,24 @@ export const Header = () => {
             <StyledLink href="#projects">Projects</StyledLink>
           </li>
           <li>
+            <StyledLink href="#skills">Skills</StyledLink>
+          </li>
+          <li>
             <HighlightedLink href="#contacts">Contact</HighlightedLink>
           </li>
         </ul>
       </Container>
-    </header>
+    </StyledHeader>
   );
 };
+
+const StyledHeader = styled.header`
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: ${(props) => props.theme.backgroundColor};
+`;
 
 const StyledMenu = styled.nav`
   display: flex;
